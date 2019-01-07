@@ -1,0 +1,24 @@
+<html>
+<head>
+generate all possible sorted array from alternative array
+</head>
+<body>
+<script>
+var array1=[5,10,1,2,15];
+var array2=[20,4,6,17,8];
+var results =[];
+for (var i=0;i<array1.length-1;i++)
+{
+ for(var j=0;j<array2.length-1;j++)
+ {
+   if(array1[i]<array2[j])
+   {
+     results.push(array1[i] + ' ' + array2[j]);
+   }
+ }
+
+}
+console.log(results);
+</script>
+</body>
+</html>
